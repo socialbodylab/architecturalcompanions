@@ -9,7 +9,7 @@ JSONObject motorMessage;;
 
 void setup()
 {
-  size(1000,200);
+  size(1000,300);
   String portName = Serial.list()[0];
   println(portName);
   motorPort = new Serial(this, portName, 115200);
@@ -21,7 +21,7 @@ void setup()
  
   cp5.addSlider("sendVal")
      .setPosition(100,50)
-     .setRange(0,5000)
+     .setRange(0,8000)
      .setDecimalPrecision(2)
      .setSize(700,200)
      ;
